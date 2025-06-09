@@ -141,3 +141,41 @@ nav ul li a {
   font-weight: bold;
   font-size: 12px;
 }
+
+.testimonial {
+  background-color: #c271ff;
+  display: flex;
+  align-items: center; /* vertically centers content */
+  padding: 20px;
+  gap: 20px;
+}
+
+.testimonial-image img {
+  display: block;
+  max-width: 150px; /* or whatever size fits */
+  border-radius: 50%; /* if you want the image round */
+}
+
+.testimonial-text {
+  color: #ffffff;
+  text-align: center;
+  flex: 1; /* take remaining space */
+}
+
+.testimonial-text blockquote {
+  font-family: 'Source Sans Pro', sans-serif;  
+  font-size: 22px;
+}
+
+.testimonial-text h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.testimonial-text p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-size: 22px;
+}
+
