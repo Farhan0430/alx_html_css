@@ -145,37 +145,335 @@ nav ul li a {
 .testimonial {
   background-color: #c271ff;
   display: flex;
-  align-items: center; /* vertically centers content */
-  padding: 20px;
-  gap: 20px;
+  align-items: center;
+  justify-content: center; /* horizontally center content */
+  padding: 20px 40px;
+  gap: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 35vh; /* center vertically if needed */
+  box-sizing: border-box;
 }
 
 .testimonial-image img {
-  display: block;
-  max-width: 150px; /* or whatever size fits */
-  border-radius: 50%; /* if you want the image round */
+  max-width: 160px;
+  border-radius: 50%;
 }
 
 .testimonial-text {
-  color: #ffffff;
-  text-align: center;
-  flex: 1; /* take remaining space */
+  color: white;
+  text-align: left;
+  flex: 1;
+  max-width: 600px;
 }
 
 .testimonial-text blockquote {
-  font-family: 'Source Sans Pro', sans-serif;  
   font-size: 22px;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
 }
 
 .testimonial-text h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
 }
 
 .testimonial-text p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-size: 22px;
+  font-size: 14px;
+  font-style: italic;
+  margin: 5px 0 0 0;
 }
+
+
+/* Base font */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tutorials Section */
+.tutorials {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Section Heading */
+.tutorials h2 {
+  font-size: 32px;
+  font-weight: 300; /* Light */
+  color: #333;
+}
+
+.tutorials h2 span {
+  color: #c271ff;
+  font-weight: 700; /* Bold */
+}
+
+/* Tutorial Cards Container */
+.tutorial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Individual Card */
+.tutorial-card {
+  width: 250px;
+  text-align: left;
+}
+
+/* Video Thumbnail with Overlay */
+.video-thumb {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.video-thumb img:first-child {
+  width: 100%;
+  display: block;
+}
+
+.video-thumb .overlay-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+}
+
+/* Tutorial Title */
+.tutorial-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+
+/* Description Text */
+.tutorial-card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+  margin: 4px 0;
+}
+
+/* Author Row */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c271ff;
+  margin: 0;
+}
+
+/* Rating Row: stars + duration */
+.rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Star Styles */
+.rating-row .stars {
+  display: flex;
+  gap: 4px;
+  color: #c271ff;
+  margin: 0;
+}
+
+.rating-row .stars i.faded {
+  color: #d8d8d8;
+}
+
+/* Duration */
+.rating-row .duration {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c271ff;
+  margin: 0;
+}
+
+
+/* Membership Section */
+.membership {
+  background-color: #071629;
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.membership h2 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 46px;
+}
+
+.membership h2 {
+  color: white;
+  font-weight: normal;
+}
+
+.membership-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.membership-list div {
+  max-width: 180px;
+}
+
+.membership-list img {
+  margin-bottom: 15px;
+}
+
+.membership-list h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.membership-list p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.membership button {
+  background-color: #C271FF;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #C271FF;
+  font-weight: 700;
+}
+
+
+.faq {
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+}
+
+.faq-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.faq-column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.faq-column div {
+  margin-bottom: 40px;
+}
+
+.faq h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.faq p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.8;
+}
+
+footer {
+  background-color: #071629;
+  padding: 40px 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-top img {
+  height: 40px; /* Adjust based on your logo size */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons i {
+  background-color: white;
+  color: #071629;
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 10px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a0a0a0; /* Optional soft gray, change if needed */
+  text-align: center;
+  margin: 0;
+}
+
+
 
