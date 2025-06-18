@@ -1,1 +1,1 @@
- please write an amazing README.md
+Implement a design from scratch

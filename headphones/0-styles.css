@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section, header, footer {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+a:hover,
+a:active {
+  color: #FF6565;
+}
+
+button:hover,
+button:active,
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+#picture-background {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensures it takes up full screen height */
+    padding: 0 0;
+
+
+
+}
+
+/* .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+} */
+
+.header{
+    padding: 250px
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.header h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.header p {
+    width: 60%; 
+    font-size: 16px;
+    font-weight: regular;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.header button {
+    display: block;
+    margin: 20px auto; /* centers the button */
+    background-color: #FF6565;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600; /* semibold */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* optional: rounded corners */
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+  /* Stack nav items vertically */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  /* Center hero section text */
+  #picture-background section {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  #picture-background h1 {
+    font-size: 24px;
+  }
+
+  #picture-background h3 {
+    font-size: 18px;
+  }
+
+  #picture-background p {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* Footer stacking */
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #071629;
+  padding: 40px 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-top img {
+  height: 40px; /* Adjust based on your logo size */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons i {
+  background-color: white;
+  color: #071629;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a0a0a0; /* Optional soft gray, change if needed */
+  text-align: center;
+  margin: 0;
+}
