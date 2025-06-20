@@ -72,7 +72,6 @@ nav ul li a {
     text-align: center;
 }
 
-
 .header h1 {
     text-align: center;
     font-size: 32px;
@@ -115,115 +114,47 @@ nav ul li a {
     cursor: pointer;
 }
 
-footer {
-  background-color: #071629;
-  padding: 40px 60px;
+#what-we-do {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#what-we-do .intro-text {
   font-family: 'Source Sans Pro', sans-serif;
-  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  color: #071629;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-top {
-  width: 100%;
+.features {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.footer-top img {
-  height: 40px;
+.feature-item {
+  flex: 1 1 20%;
+  min-width: 180px;
 }
 
-.social-icons {
-  display: flex;
-  gap: 20px;
+.feature-item i {
+  font-size: 64px;
+  color: #FF6565;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
-.social-icons i {
-  background-color: white;
-  color: #071629;
-  font-size: 16px;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer p {
-  font-size: 12px;
+.feature-item p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
   font-weight: 400;
-  color: #a0a0a0;
-  text-align: center;
-  margin: 0;
+  color: #071629;
+  line-height: 1.4;
 }
-
-
-@media screen and (max-width: 480px) {
-  /* Stack nav items vertically */
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-  }
-
-  nav ul li {
-    margin: 0;
-  }
-
-  /* Center hero section text */
-  #picture-background section {
-    padding: 20px 10px;
-    text-align: center;
-  }
-
-  #picture-background h1 {
-    font-size: 24px;
-  }
-
-  #picture-background h3 {
-    font-size: 18px;
-  }
-
-  #picture-background p {
-    font-size: 14px;
-  }
-
-  button {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
-  /* Footer stacking */
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-  }
-
-  footer p {
-    margin-top: 20px;
-    font-size: 12px;
-  }
-}
-
 
