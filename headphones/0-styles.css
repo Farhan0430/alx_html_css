@@ -60,7 +60,7 @@ nav ul li a {
 
 #picture-background {
     background-image: url('images/headphones_hero_1.jpg');
-    background-size: cover; /* changed from 'contain' to 'cover' for full background coverage */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -103,68 +103,17 @@ nav ul li a {
 
 .header button {
     display: block;
-    margin: 20px auto; /* centers the button */
+    margin: 20px auto;
     background-color: #FF6565;
     color: #FFFFFF;
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600; /* semibold */
+    font-weight: 600;
     padding: 10px 20px;
     border: none;
-    border-radius: 20px; /* optional: rounded corners */
+    border-radius: 20px;
     cursor: pointer;
 }
-
-footer {
-  background-color: #071629;
-  padding: 40px 60px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.footer-top img {
-  height: 40px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.social-icons i {
-  background-color: white;
-  color: #071629;
-  font-size: 16px;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer p {
-  font-size: 12px;
-  font-weight: 400;
-  color: #a0a0a0;
-  text-align: center;
-  margin: 0;
-}
-
 
 @media screen and (max-width: 480px) {
   /* Stack nav items vertically */

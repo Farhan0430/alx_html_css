@@ -3,9 +3,9 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-section, header, footer {
+.container {
     max-width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -156,5 +156,122 @@ nav ul li a {
   font-weight: 400;
   color: #071629;
   line-height: 1.4;
+}
+
+#our-results {
+  background-image: url('images/headphones_hero_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#our-results .results-intro {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  max-width: 800px;
+  margin: 0 auto 80px;
+  line-height: 1.6;
+}
+
+.result-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.result-item {
+  background-image: url('images/pentagone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 20%;
+  min-width: 160px;
+  text-align: center;
+}
+
+.result-item h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.result-item p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+#contact-us {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#contact-us h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #071629;
+  margin-bottom: 40px;
+}
+
+#contact-us .form-group {
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact-us .form-group p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #071629;
+  margin: 0 0 8px 0;
+}
+
+#contact-us input,
+#contact-us textarea {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  color: #071629;
+  background-color: transparent;
+  outline: none;
+}
+
+#contact-us button {
+  margin-top: 20px;
+  background-color: #FF6565;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
