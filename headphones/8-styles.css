@@ -332,7 +332,8 @@ footer {
 
   nav img {
     position: absolute;
-    left: 50%;
+    left: 37%;
+    top: -10px;
     transform: translateX(-50%);
     height: 32px;
     z-index: 30;
@@ -360,7 +361,6 @@ footer {
     transition: all 0.3s ease;
   }
 
-  /* Hamburger 'X' transformation */
   .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
@@ -379,7 +379,7 @@ footer {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: rgba(7, 22, 41, 0.8); /* semi-transparent dark */
+    background-color: rgba(7, 22, 41, 0.8);
     display: none;
     flex-direction: column;
     justify-content: center;
